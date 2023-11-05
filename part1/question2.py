@@ -15,7 +15,12 @@
 # it. As always, there is a test suite that checks the result. It is in 
 # `question2_test.py.`
 
-swapper = None
+
 
 def run_swapper(list_of_tuples):
-  return list(map(swapper, list_of_tuples))
+  swapper = []
+  for t in list_of_tuples:
+    x, y = t
+    swapper.append((y, x))
+
+  return swapper

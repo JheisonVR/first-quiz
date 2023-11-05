@@ -1,9 +1,17 @@
 package org.velezreyes.quiz.question6;
 
+
 public class VendingMachineImpl {
+  private static VendingMachine instance;
+
+  private VendingMachineImpl(){
+
+  }
 
   public static VendingMachine getInstance() {
-    // Fix me!
-    return null;
+    if(instance == null ){
+      instance = new FirstVendingMachine();
+    }
+    return instance;
   }
 }

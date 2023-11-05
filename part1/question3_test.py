@@ -1,3 +1,7 @@
+from question3 import make_oven, alchemy_combine
+# from question3 import alchemy_combine
+
+
 def test_alchemy_combine():
 
   assert alchemy_combine(
